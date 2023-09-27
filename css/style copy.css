@@ -13,13 +13,13 @@
   --navcolor: #fff;
 }
 
-/* Start of Full Body Styling */
+/* Start of Full Body Section Styling */
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
-/* End of Full Body Styling */
+/* End of Full Body Section Styling */
 
-/* Start of Header Styling */
+/* Start of Header Section Styling */
 header {
   padding: 20px 0px 15px 0px;
   background-color: lightgrey;
@@ -46,8 +46,6 @@ header h1 {
 header a {
   text-decoration: none;
   color: var(--dark);
-  margin-right: 20px;
-  border: 20px;
 }
 
 header nav {
@@ -70,11 +68,11 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: var(--light);
-  box-shadow: 0 0 10px var(--navcolor);
-  border-radius: 30px;
+  color: var(--navcolor);
+  border-radius: 15px;
+  text-shadow: none;
 }  
-/* End of Header Styling */
+/* End of Header Section Styling */
 
 
 /* Section Global Styling */
@@ -82,7 +80,7 @@ section {
   padding: 60px;
 }
 
-/* Start of Hero  Styling */
+/* Start of Hero Section Styling */
 .hero {
   background-image: url(https://images.unsplash.com/photo-1517999179346-a7078f1e40a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2127&q=80);
   background-size: cover;
@@ -98,9 +96,9 @@ section {
   background-color: var(--light);
   padding:0px 10px 0px 10px;
 }
-/* End of Hero Styling */
+/* End of Hero Section Styling */
   
-/* Start of Main Content Styling */
+/* Start of Main Sections Content Styling */
 .section {
   background-color: var(--light);
   display: flex;
@@ -109,7 +107,7 @@ section {
   align-items: center;
 }
 
-/* "About Me" and "Contact Me" Titles' Styling */
+/* "About Me" and "Contact Me" Sections Titles' Styling */
 .section-title {
   display: flex;
   flex-wrap: wrap;
@@ -137,7 +135,7 @@ section {
   height: 1250px;
 }
 
-/* "About Me" and "Contact Me"  Contents' Styling */
+/* "About Me" and "Contact Me" Section Contents' Styling */
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -147,7 +145,7 @@ section {
   width: 90%;
 }
 
-/* "Work"  Content Stlyling */
+/* "Work" Section Content Stlyling */
 .flex-row2 {
   display: flex;
   flex-direction: column;
@@ -158,6 +156,7 @@ section {
   width: 90%;
   border-left: var(--dark) solid 3px;
 }
+
 
 
 /* Section Font and Anchor Elements Styling */
@@ -204,7 +203,7 @@ section {
   width: 100%;
 }
 
-/* e Styling */
+/* Surf Report Image Styling */
 .surf-report {
   background-image: url(https://www.nps.gov/grsm/planyourvisit/images/Clouds-over-Clingmans_July-17_KPlaas.jpg);
   background-size: cover;
@@ -215,10 +214,9 @@ section {
   position: relative;
 }
 
-/* Main Project Hover Styling */
+/* Surf Report Image Styling */
 .surf-report:hover {
   opacity: 75%;
-  filter: grayscale(100%);
 }
 
 /* LED Wall Image Styling */
@@ -236,7 +234,6 @@ section {
 /* LED Wall Hover Styling */
 .led-wall:hover {
   opacity: 75%;
- filter: grayscale(100%);
 }
 
 /* Calculator Image Styling */
@@ -254,7 +251,6 @@ section {
 /* Calculator Hover Styling */
 .calculator:hover {
   opacity: 75%;
- filter: grayscale(100%);
 }
 
 /* Pastel Puzzle Image Styling */
@@ -272,7 +268,6 @@ section {
 /* Pastel Puzzle Hover Styling */
 .pastel-puzzles:hover {
   opacity: 75%;
-  filter: grayscale(100%);
 }
 
 /* Run Buddy Image Styling */
@@ -290,12 +285,10 @@ section {
 /* Run Buddy Hover Styling */
 .run-buddy:hover {
   opacity: 75%;
-  filter: grayscale(100%);
-
 }
 /* End of Main Sections Content Styling */
 
-/* Media Queries */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   header {
       padding-bottom: 0;
@@ -328,12 +321,14 @@ section {
   }
 }
 
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
   section {
     padding: 30px 15px;
   }
 }
 
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
   .section-title {
     width: 95%;
